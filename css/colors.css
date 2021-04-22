@@ -1,0 +1,11 @@
+/* Clubhouse color palette */
+
+:root {
+  --primary-color: #F2EFE4;
+  --white-color: #ffffff;
+  --graphite-color: #4e4d49;
+  --graphite-dark-color: #252523;
+  --graphite-light-color: #b4b3b3;
+  --ice-color: #dddddd;
+  --button-green-color: #4FAF62;
+}
