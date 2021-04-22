@@ -18,6 +18,11 @@ nav {
   padding: 1.3rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--graphite-dark-color);
+}
+
 .menu-icons {
   display: flex;
   align-items: center;
@@ -105,6 +110,71 @@ nav {
   position: fixed;
   bottom: 30px;
   z-index: 1;
+}
+
+/* Room CSS -> room.html */
+.back-to-home {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.room-card {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: var(--white-color);
+  padding: 1rem 1rem 0.3rem 1rem;
+}
+
+.room-card__speakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 0.8rem;
+}
+
+.room-card__speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--graphite-dark-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.room-card__speaker__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.room-card__speaker img {
+  background: var(--button-green-color);
+  width: 10px;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+.room-card__speaker--img {
+  width: 60px;
+  height: 60px;
+  border-radius: 40%;
+  background-position: center;
+  background-size: cover;
+}
+
+.room-card__speaker--erick {
+  background-image: url("../assets/avatars/erick.jpeg");
+}
+
+.room-card__speaker--elon {
+  background-image: url("../assets/avatars/elon.jpeg");
+}
+
+.room-card__speaker--luis {
+  background-image: url("../assets/avatars/luis.jpeg");
 }
 
 footer {
