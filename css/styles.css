@@ -1,7 +1,6 @@
 @import url(reset.css);
 @import url(colors.css);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
 html, body {
   height: 100%;
 }
@@ -96,8 +95,8 @@ a {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  padding: 0.6rem 0.8rem;
-  border-radius: 16px;
+  padding: 0.8rem 0.9rem;
+  border-radius: 18px;
   border: none;
   background: var(--button-green-color);
   color: var(--white-color);
@@ -112,7 +111,18 @@ a {
   z-index: 1;
 }
 
+.fixed-footer-primary-color {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  box-shadow: 0rem -1rem 1rem var(--primary-color);
+  background: var(--primary-color);
+}
+
 /* Room CSS -> room.html */
+
 .back-to-home {
   display: flex;
   align-items: center;
@@ -124,6 +134,7 @@ a {
   border-top-right-radius: 30px;
   background: var(--white-color);
   padding: 1rem 1rem 0.3rem 1rem;
+  height: 100%;
 }
 
 .room-card__speakers {
@@ -177,12 +188,40 @@ a {
   background-image: url("../assets/avatars/luis.jpeg");
 }
 
-footer {
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.configs-room-buttons {
+  display: flex;
+  gap: 1rem;
+  color: var(--graphite-color);
+}
+
+.btn-room {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.8rem 0.9rem;
+  border-radius: 18px;
+  border: none;
+  background: var(--gray-color);
+}
+
+.btn-room p {
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+.fixed-footer-white {
   position: fixed;
   left: 0;
   bottom: 0;
   height: 10vh;
   width: 100%;
-  box-shadow: 0rem -1rem 1rem var(--primary-color);
-  background: var(--primary-color);
+  padding-bottom: 1rem;
+  background: var(--white-color);
 }
