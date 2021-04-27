@@ -1,132 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clubhouse - Semana JSExpert</title>
-    <link rel="shortcut icon" type="image/jpeg" href="assets/favicon.jpeg" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <!-- Menu -->
-    <nav>
-      <img
-        src="assets/icons/search.svg"
-        class="menu-icons__icon"
-        alt="Search icon"
-      />
-      <div class="menu-icons">
-        <img
-          src="assets/icons/envelope.svg"
-          class="menu-icons__icon"
-          alt="Envelop icon"
-        />
-        <img
-          src="assets/icons/calendar.svg"
-          class="menu-icons__icon"
-          alt="Calendar icon"
-        />
-        <img
-          src="assets/icons/bell.svg"
-          class="menu-icons__icon"
-          alt="Bell icon"
-        />
-        <div class="avatar"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clubhouse - Semana JSExpert</title>
+  <link rel="shortcut icon" type="image/jpeg" href="assets/favicon.jpeg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Menu -->
+  <nav>
+    <img src="assets/icons/search.svg" class="menu-icons__icon" alt="Search icon" />
+    <div class="menu-icons">
+      <img src="assets/icons/envelope.svg" class="menu-icons__icon" alt="Envelop icon" />
+      <img src="assets/icons/calendar.svg" class="menu-icons__icon" alt="Calendar icon" />
+      <img src="assets/icons/bell.svg" class="menu-icons__icon" alt="Bell icon" />
+      <div class="avatar">
+        <img src="assets/avatars/luis.jpeg" alt="Luís Lança">
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Rooms available -->
-    <div class="cards">
-      <a href="room.html">
-        <div class="cards__card">
-          <p class="cards__card__title">
-            Nômades Digitais: Onde vivem, o que comem, quem são eles?
-          </p>
-          <div class="cards__card__info">
-            <div class="avatar"></div>
-            <div class="cards__card__info__speakers">
-              <ul>
-                <li>Luís Lança <span role="img" class="emoji">💬</span></li>
-                <li>Erick Wendel <span role="img" class="emoji">💬</span></li>
-                <li>Ryan Dahl <span role="img" class="emoji">💬</span></li>
-                <span class="cards__card__info__speakers__listeners">
-                  535 <i class="fa fa-user"></i> / 3
-                  <i class="fa fa-comment"></i>
-                </span>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </a>
-
+  <!-- Rooms available -->
+  <div class="cards">
+    <a href="room.html">
       <div class="cards__card">
         <p class="cards__card__title">
-          Rolezinho na lua, Dogcoin e o mercado de criptomoedas!
+          Nômades Digitais: Onde vivem, o que comem, quem são eles?
         </p>
         <div class="cards__card__info">
-          <div class="avatar"></div>
+          <div class="avatar">
+            <img src="assets/avatars/luis.jpeg" alt="Erick Wendel">
+          </div>
           <div class="cards__card__info__speakers">
             <ul>
               <li>Luís Lança <span role="img" class="emoji">💬</span></li>
-              <li>Elon Musk <span role="img" class="emoji">💬</span></li>
+              <li>Erick Wendel <span role="img" class="emoji">💬</span></li>
+              <li>Ryan Dahl <span role="img" class="emoji">💬</span></li>
               <span class="cards__card__info__speakers__listeners">
-                49 <i class="fa fa-user"></i> / 2 <i class="fa fa-comment"></i>
-              </span>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="cards__card">
-        <p class="cards__card__title">Game of Thrones - Latest news!</p>
-        <div class="cards__card__info">
-          <div class="avatar"></div>
-          <div class="cards__card__info__speakers">
-            <ul>
-              <li>Emilia Clarke <span role="img" class="emoji">💬</span></li>
-              <li>Kit Harington <span role="img" class="emoji">💬</span></li>
-              <li>Sophie Turner <span role="img" class="emoji">💬</span></li>
-              <li>Peter Dinklage <span role="img" class="emoji">💬</span></li>
-              <span class="cards__card__info__speakers__listeners">
-                1890 <i class="fa fa-user"></i> / 4
+                535 <i class="fa fa-user"></i> / 3
                 <i class="fa fa-comment"></i>
               </span>
             </ul>
           </div>
         </div>
       </div>
+    </a>
+  </div>
+  </div>
 
-      <div class="cards__card">
-        <p class="cards__card__title">
-          Worldpackers: Viaje quase de graça pelo mundo!
-        </p>
-        <div class="cards__card__info">
-          <div class="avatar"></div>
-          <div class="cards__card__info__speakers">
-            <ul>
-              <li>Luís Lança <span role="img" class="emoji">💬</span></li>
-              <span class="cards__card__info__speakers__listeners">
-                2798 <i class="fa fa-user"></i> / 1
-                <i class="fa fa-comment"></i>
-              </span>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Start a room button -->
+  <div class="btn-absolute">
+    <button class="btn-start-room">
+      <i class="fa fa-plus"></i>
+      Start a room
+    </button>
+  </div>
 
-    <!-- Start a room button -->
-    <div class="btn-absolute">
-      <button class="btn-start-room">
-        <i class="fa fa-plus"></i>
-        Start a room
-      </button>
-    </div>
+  <footer class="fixed-footer-primary-color"></footer>
 
-    <footer class="fixed-footer-primary-color"></footer>
+  <!-- Font Awesome CDN -->
+  <script src="https://use.fontawesome.com/8604f653a5.js"></script>
+</body>
 
-    <!-- Font Awesome CDN -->
-    <script src="https://use.fontawesome.com/8604f653a5.js"></script>
-  </body>
 </html>

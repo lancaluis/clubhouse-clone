@@ -39,10 +39,12 @@ a {
 .avatar {
   width: 30px;
   height: 30px;
-  border-radius: 45%;
-  background-image: url("../assets/avatars/user.jpeg");
-  background-position: center;
-  background-size: cover;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
 .cards {
@@ -60,11 +62,18 @@ a {
   box-shadow: 0rem 0.05rem 0.1rem var(--ice-color);
 }
 
-.cards__card__title {
+.cards__card__title, .room-card__title {
   font-size: 0.8rem;
   color: var(--graphite-dark-color);
   line-height: 1.4;
   font-weight: 600;
+}
+
+.room-card__subtitle {
+  font-size: 0.8rem;
+  color: var(--ice-color);
+  font-weight: 600;
+  margin: 2rem 0 1rem;
 }
 
 .cards__card__info {
@@ -96,7 +105,7 @@ a {
   gap: 0.5rem;
   align-items: center;
   padding: 0.8rem 0.9rem;
-  border-radius: 18px;
+  border-radius: 25px;
   border: none;
   background: var(--button-green-color);
   color: var(--white-color);
@@ -137,14 +146,15 @@ a {
   height: 100%;
 }
 
-.room-card__speakers {
+.room-card__users {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 1rem 0.8rem;
+  justify-content: safe;
+  gap: 1rem 2rem;
+  margin: 1rem 0;
 }
 
-.room-card__speaker {
+.room-card__user {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,38 +164,31 @@ a {
   font-weight: 600;
 }
 
-.room-card__speaker__name {
+.room-card__user__name {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
 }
 
-.room-card__speaker img {
+.room-card__user .icon {
   background: var(--button-green-color);
   width: 10px;
   border-radius: 50%;
   padding: 0.2rem;
 }
 
-.room-card__speaker--img {
+.room-card__user__img {
   width: 60px;
   height: 60px;
-  border-radius: 40%;
-  background-position: center;
-  background-size: cover;
+  background: var(--button-green-color);
+  border-radius: 50%;
 }
 
-.room-card__speaker--erick {
-  background-image: url("../assets/avatars/erick.jpeg");
-}
-
-.room-card__speaker--elon {
-  background-image: url("../assets/avatars/elon.jpeg");
-}
-
-.room-card__speaker--luis {
-  background-image: url("../assets/avatars/luis.jpeg");
+.room-card__user__img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .buttons {
@@ -206,9 +209,23 @@ a {
   gap: 0.5rem;
   align-items: center;
   padding: 0.8rem 0.9rem;
-  border-radius: 18px;
+  border-radius: 25px;
   border: none;
   background: var(--gray-color);
+}
+
+.circle-btn-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 0.9rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--gray-color);
+}
+
+.circle-btn-room img {
+  width: 14px;
 }
 
 .btn-room p {
@@ -222,6 +239,6 @@ a {
   bottom: 0;
   height: 10vh;
   width: 100%;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   background: var(--white-color);
 }
