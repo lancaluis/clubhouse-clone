@@ -26,10 +26,33 @@
 
   <!-- Rooms available -->
   <div class="cards">
-    <a href="room.html">
+    <a href="user-room.html">
       <div class="cards__card">
         <p class="cards__card__title">
-          Nômades Digitais: Onde vivem, o que comem, quem são eles?
+          User Room
+        </p>
+        <div class="cards__card__info">
+          <div class="avatar">
+            <img src="assets/avatars/luis.jpeg" alt="Erick Wendel">
+          </div>
+          <div class="cards__card__info__speakers">
+            <ul>
+              <li>Luís Lança <span role="img" class="emoji">💬</span></li>
+              <li>Erick Wendel <span role="img" class="emoji">💬</span></li>
+              <li>Ryan Dahl <span role="img" class="emoji">💬</span></li>
+              <span class="cards__card__info__speakers__listeners">
+                535 <i class="fa fa-user"></i> / 3
+                <i class="fa fa-comment"></i>
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="speaker-room.html">
+      <div class="cards__card">
+        <p class="cards__card__title">
+          Speaker Room
         </p>
         <div class="cards__card__info">
           <div class="avatar">
@@ -50,20 +73,40 @@
       </div>
     </a>
   </div>
-  </div>
 
   <!-- Start a room button -->
   <div class="btn-absolute">
-    <button class="btn-start-room">
+    <button class="btn-start-room" onclick="toggleModal(true)">
       <i class="fa fa-plus"></i>
       Start a room
     </button>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal__content">
+      <div class="modal__content__form">
+        <h1>Adicione um tópico</h1>
+        <input type="text" name="topic" id="topic">
+      </div>
+      <div class="modal__content__buttons">
+        <button onclick="toggleModal(false)">Cancelar</button>
+        <button onclick="toggleModal(false)">Ok</button>
+      </div>
+    </div>
   </div>
 
   <footer class="fixed-footer-primary-color"></footer>
 
   <!-- Font Awesome CDN -->
   <script src="https://use.fontawesome.com/8604f653a5.js"></script>
+
+  <!-- Toggle Modal -->
+  <script>
+    function toggleModal(action) {
+      if (action) document.getElementById('modal').style.display = "flex"
+      else document.getElementById('modal').style.display = "none"
+    }
+  </script>
 </body>
 
 </html>
